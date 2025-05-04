@@ -10,7 +10,7 @@ let i = 0;
 
 let slider = document.getElementById("slider");
 
-function swapImg() {
+function next() {
   if (i < slides.length - 1) {
     i++;
     console.log(i);
