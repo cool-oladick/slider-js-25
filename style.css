@@ -1,0 +1,41 @@
+.box-sliders {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#slider {
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+#but,
+#but1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    border: none;
+    width: 40px;
+    height: 40px;
+    background: #333;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#but:hover,
+#but1:hover {
+    background: #000;
+}
+
+#but {
+    left: 10px;
+}
+
+#but1 {
+    right: 10px;
+}

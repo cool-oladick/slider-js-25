@@ -2,75 +2,24 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Slider</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Slider</title>
 
-    .box {
-      width: 960px;
-      margin: 0 auto;
-      background: #eded97;
-      text-align: center;
-      padding: 20px;
-    }
-
-    .box-sliders {
-      position: relative;
-      width: fit-content;
-      margin: 0 auto;
-    }
-
-    #slider {
-      height: 400px;
-      display: block;
-    }
-
-    #but,
-    #but1 {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      border-radius: 50%;
-      border: none;
-      width: 40px;
-      height: 40px;
-      background: rgba(0, 0, 0, 0.6);
-      color: white;
-      font-size: 20px;
-      cursor: pointer;
-      z-index: 2;
-    }
-
-    #but {
-      left: 10px;
-    }
-
-    #but1 {
-      right: 10px;
-    }
-
-    h1 {
-      margin: 20px 10px 50px;
-    }
-  </style>
 </head>
 
 <body>
-  <div class="box">
-    <h1>Slider</h1>
-    <div class="box-sliders">
-      <img id="slider" src="images/1.jpg" />
-      <button id="but" onclick="prev()">&lt;</button>
-      <button id="but1" onclick="next()">&gt;</button>
+    <div class="box">
+        <h1>Slider</h1>
+        <div class="box-sliders">
+            <img id="slider" src="images/1.jpg">
+            <button id="but" onclick="prev()">&lt;</button>
+            <button id="but1" onclick="next()">&gt;</button>
+            <script src="script.js"></script>
+        </div>
     </div>
-  </div>
-  <script src="script.js"></script>
+
 </body>
 
 </html>
